@@ -29,18 +29,24 @@ $gcp->setAuthToken($_SESSION['accessToken']);
 
 $printers = $gcp->getPrinters();
 //print_r($printers);
-
+foreach ($printers as $value) {
+					# code...
+	echo $value['id'];
+	echo "<br/>";
+}
 $printerid = "";
 if(count($printers)==0) {
 	
 	echo "Could not get printers";
 	exit;
 }
+
 else {
 	
 	$printerid = $printers[0]['id']; // Pass id of any printer to be used for print
+	echo $printerid;
 	// Send document to the printer
-	$resarray = $gcp->sendPrintToPrinter($printerid, "Printing Doc using Google Cloud Printing", "./pdf.pdf", "application/pdf");
+	/*$resarray = $gcp->sendPrintToPrinter($printerid, "Printing Doc using Google Cloud Printing", "./pdf.pdf", "application/pdf");
 	
 	if($resarray['status']==true) {
 		
@@ -48,5 +54,32 @@ else {
 	}
 	else {
 		echo "An error occured while printing the doc. Error code:".$resarray['errorcode']." Message:".$resarray['errormessage'];
-	}
+	}*/
 }
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<form method="post" enctype="multipart/form-data" action="uploadit.php">
+			<input type="hidden" name="MAX_FILE_SIZE" value="2000000">
+			<input type="file" name="userfile" id="userfile">
+			<input name="upload" type="submit" id="upload" value="Upload" >
+
+			<select name="printerid">
+			  <?php  foreach ($printers as $value) {
+					# code...
+					//echo $value['displayName'];
+					echo "<option value='".$value['id']."'>".$value[displayName]."</option>";
+				}
+				?>
+			   
+			</select>
+		</form>
+</body>
+</html>
