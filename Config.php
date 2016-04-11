@@ -27,17 +27,17 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
     
     $redirectConfig = array(
-        'client_id' 	=> 'YOUR-CLIENT-ID',
-        'redirect_uri' 	=> 'http://yourdomain.com/oAuthRedirect.php',
+        'client_id'     => '883598830092-bngt0308suebnaev4h7t5ouv79u8poh1.apps.googleusercontent.com',
+        'redirect_uri'  => 'http://gurudu.me/phpcp/oAuthRedirect.php',
         'response_type' => 'code',
         'scope'         => 'https://www.googleapis.com/auth/cloudprint',
     );
     
     $authConfig = array(
         'code' => '',
-        'client_id' 	=> 'YOUR-CLIENT-ID',
-        'client_secret' => 'YOUR-CLIENT-SECRET',
-        'redirect_uri' 	=> 'http://yourdomain.com/oAuthRedirect.php',
+        'client_id'     => '883598830092-bngt0308suebnaev4h7t5ouv79u8poh1.apps.googleusercontent.com',
+        'client_secret' => 'p0OzInxFYRlUmRp_WvuppRmm',
+        'redirect_uri'  => 'http://gurudu.me/phpcp/oAuthRedirect.php',
         "grant_type"    => "authorization_code"
     );
     
@@ -53,9 +53,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         'grant_type' => "refresh_token" 
     );
     
-    $urlconfig = array(	
-        'authorization_url' 	=> 'https://accounts.google.com/o/oauth2/auth',
-        'accesstoken_url'   	=> 'https://accounts.google.com/o/oauth2/token',
+    $urlconfig = array( 
+        'authorization_url'     => 'https://accounts.google.com/o/oauth2/auth',
+        'accesstoken_url'       => 'https://accounts.google.com/o/oauth2/token',
         'refreshtoken_url'      => 'https://www.googleapis.com/oauth2/v3/token'
     );
     
