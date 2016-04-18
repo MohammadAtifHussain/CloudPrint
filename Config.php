@@ -28,7 +28,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     
     $redirectConfig = array(
         'client_id'     => '883598830092-bngt0308suebnaev4h7t5ouv79u8poh1.apps.googleusercontent.com',
-        'redirect_uri'  => 'http://gurudu.me/phpcp/oAuthRedirect.php',
+        'redirect_uri'  => 'http://b.gurudu.me/phpcp/oAuthRedirect.php',
         'response_type' => 'code',
         'scope'         => 'https://www.googleapis.com/auth/cloudprint',
     );
@@ -37,7 +37,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         'code' => '',
         'client_id'     => '883598830092-bngt0308suebnaev4h7t5ouv79u8poh1.apps.googleusercontent.com',
         'client_secret' => 'p0OzInxFYRlUmRp_WvuppRmm',
-        'redirect_uri'  => 'http://gurudu.me/phpcp/oAuthRedirect.php',
+        'redirect_uri'  => 'http://b.gurudu.me/phpcp/oAuthRedirect.php',
         "grant_type"    => "authorization_code"
     );
     

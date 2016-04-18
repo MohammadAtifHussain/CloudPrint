@@ -66,19 +66,17 @@ else {
 </head>
 <body>
 
-	<form method="post" enctype="multipart/form-data" action="uploadit.php">
+	<form method="post" enctype="multipart/form-data" action="locbased.php">
 			<input type="hidden" name="MAX_FILE_SIZE" value="2000000">
 			<input type="file" name="userfile" id="userfile">
 			<input name="upload" type="submit" id="upload" value="Upload" >
 
-			<select name="printerid">
-			  <?php  foreach ($printers as $value) {
-					# code...
-					//echo $value['displayName'];
-					echo "<option value='".$value['id']."'>".$value[displayName]."</option>";
-				}
-				?>
-			   
+		
+			<select name="nearuserprinter">
+				<option value="0">Printer 1</option>
+				<option value="1">Printer 2</option>
+				<option value="2">Printer 3</option>
+				<option value="3">Printer 4</option>
 			</select>
 		</form>
 </body>
