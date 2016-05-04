@@ -26,7 +26,7 @@ require_once 'GoogleCloudPrint.php';
 $gcp = new GoogleCloudPrint();
 
 // Replace token you got in offlineToken.php
-$refreshTokenConfig['refresh_token'] = 'YOUR-OFFLINE-ACCESS-TOKEN';
+$refreshTokenConfig['refresh_token'] = '1/LO9NCtL5PjoNYrC0Z-vyPnEQiRde8_2Ts2Q6YN8gdQ0';
 
 $token = $gcp->getAccessTokenByRefreshToken($urlconfig['refreshtoken_url'],http_build_query($refreshTokenConfig));
 

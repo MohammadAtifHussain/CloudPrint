@@ -26,6 +26,6 @@ if (!isset($_SESSION['accessToken'])) {
     header('Location: oAuthRedirect.php?op=getauth');
 }
 else {
-    header("Location: example.php");
+    header("Location: upload.php");
 }
 ?>

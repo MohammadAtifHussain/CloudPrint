@@ -50,6 +50,8 @@ if(isset($_GET['code']) && !empty($_GET['code'])) {
     
     // Create object
     $gcp = new GoogleCloudPrint();
+    echo $gcp->getAName();
+    //echo "string";
     $responseObj = $gcp->getAccessToken($urlconfig['accesstoken_url'],$authConfig);
     
     $accessToken = $responseObj->access_token;
@@ -60,7 +62,7 @@ if(isset($_GET['code']) && !empty($_GET['code'])) {
 	exit;
     }
     $_SESSION['accessToken'] = $accessToken;
-    header("Location: example.php");
+    header("Location: upload.php");
 }
 
 ?>

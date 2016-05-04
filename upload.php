@@ -36,10 +36,10 @@
   <div class="input-field col s6">
       <select name="nearuserprinter">
         <option value="" disabled selected>Choose Your Location </option>
-        <option value="0">C Block</option>
-        <option value="1">Library</option>
-        <option value="2">ECE Block</option>
-        <option value="3">K Block</option>
+        <option value="0">MTech Lab Printer 1</option>
+        <option value="1">MTech Lab Printer 2</option>
+        <option value="2">CSE Lab 1 Printer 1</option>
+        <option value="3">CSE Lab 1 Printer 2</option>
       </select>
     <label>Your Location</label>
   </div>
@@ -56,9 +56,9 @@
               <input class="file-path validate" type="text">
             </div>
           </div>
-        
+      </div>  
       <div class="col s5 offset-s1 btn-large waves-effect waves-light-blue lighten-1">
-        <input name="upload" type="submit" id="upload" value="Print"></input>
+        <input name="upload" type="submit" value="Print"></input>
       </div>
     </div>
   </div>
